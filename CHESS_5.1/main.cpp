@@ -1,21 +1,18 @@
 #include <iostream>
 using namespace std;
 
-//#define VARIANT_1
-#define VARIANT_2
-
-//#define BLACK_STRING "* * * * *" 
-//#define WHITE_STRING "         "
+//#define VERSION_1
+#define VERSION_2
 
 void main()
 {
 	setlocale(LC_ALL, "");
 
 	int n; // Размер доски в клетках по ширине и высоте
-	cout << "Введите размер доски: "; cin >> n;
+	cout << "Please input size of board: "; cin >> n;
 	cout << endl;
 
-#if defined VARIANT_1
+#if defined VERSION_1
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = 0; j < n; j++)
@@ -30,6 +27,8 @@ void main()
 		}
 	}
 #endif
+
+#if defined VERSION_2
 	string BLACK_STRING;
 	string WHITE_STRING;
 	
@@ -72,7 +71,7 @@ void main()
 		WHITE_STRING = "                   ";
 		break;
 	default:
-		cout << "С таким размером доски у нас ни чего не получится!";
+		cout << "With this size of board we won’t be able to do anything!";
 		break;
 	}
 
@@ -89,5 +88,5 @@ void main()
 		}
 		cout << endl;
 	}
-
+#endif
 }
