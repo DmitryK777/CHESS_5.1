@@ -15,8 +15,8 @@ void main()
 	{
 		for (int j = 0; j < n*n; j++)
 		{
-				if ((i / n) % 2 == (j / n) % 2) cout << "* ";
-				else cout << "  ";
+			if ((i / n) % 2 == (j / n) % 2) cout << "* ";
+			else cout << "  ";
 		}
 		cout << endl;
 	}
