@@ -21,8 +21,11 @@ void main()
 			if ((i / n) % 2 == (j / n) % 2) cout << "* ";
 			else cout << "  ";
 			*/
+
 			//((i / n) % 2 == (j / n) % 2) ? cout <<"* " : cout << "  ";
+
 			cout << ( (i / n % 2 == j / n % 2) ? "* " : "  " );
+
 		}
 		cout << endl;
 	}
