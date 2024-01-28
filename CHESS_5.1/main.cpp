@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 using namespace std;
 
 
@@ -6,8 +6,8 @@ void main()
 {
 	setlocale(LC_ALL, "Russian");
 
-	int n; // Размер доски в клетках по ширине и высоте
-	cout << "Введите размер доски: "; cin >> n;
+	int n; // Р Р°Р·РјРµСЂ РґРѕСЃРєРё РІ РєР»РµС‚РєР°С… РїРѕ С€РёСЂРёРЅРµ Рё РІС‹СЃРѕС‚Рµ
+	cout << "Р’РІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ РґРѕСЃРєРё: "; cin >> n;
 	cout << endl;
 
 
