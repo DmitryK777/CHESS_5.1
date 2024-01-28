@@ -1,6 +1,8 @@
 ﻿#include <iostream>
 using namespace std;
 
+#define STAR 42
+#define SPACE 32
 
 void main()
 {
@@ -15,8 +17,12 @@ void main()
 	{
 		for (int j = 0; j < n*n; j++)
 		{
+			/*
 			if ((i / n) % 2 == (j / n) % 2) cout << "* ";
 			else cout << "  ";
+			*/
+			//((i / n) % 2 == (j / n) % 2) ? cout <<"* " : cout << "  ";
+			cout << ( (i / n % 2 == j / n % 2) ? "* " : "  " );
 		}
 		cout << endl;
 	}
